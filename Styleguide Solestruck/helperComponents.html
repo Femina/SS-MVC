@@ -1,0 +1,130 @@
+
+<div class="container">
+  <div class="row" ng-controller="mainController">
+  	<div class="col-md-2">
+  		<ul class="nav nav-pills nav-stacked">
+       	<li ng-class="{ active: isSet(1) }">
+          	<a href ng-click="setTab(1)">Controllers</a>
+       	</li>
+       	<li ng-class="{ active: isSet(2) }">
+          	<a href ng-click="setTab(2)">Services</a>
+       	</li>
+       	<li ng-class="{ active: isSet(3) }">
+          	<a href ng-click="setTab(3)">Filter</a>
+       	</li>
+       	<li ng-class="{ active: isSet(4) }">
+          	<a href ng-click="setTab(4)">Directory</a>
+       	</li>
+       	</ul>
+  	</div>
+    <div class="col-md-8">
+  		<div class="jumbotron">
+       	<div ng-show="isSet(1)">
+         	 <h3>Controllers</h3>
+         	 <p class="paragraph">In Angular, a Controller is defined by a JavaScript constructor function that is used to augment the Angular Scope</p>
+
+            <p class="paragraph">When a Controller is attached to the DOM via the ng-controller directive, Angular will instantiate a new Controller object, using the specified Controller's constructor function. A new child scope will be created and made available as an injectable parameter to the Controller's constructor function as <code>$scope</code></p>
+
+            <p class="paragraph">If the controller has been attached using the controller as syntax then the controller instance will be assigned to a property on the new scope.</p>
+
+            <p class="paragraph"><h4>Use controllers to:</h4></p>
+            <p class="paragraph">-Set up the initial state of the $scope object.</p>
+            <p class="paragraph">-Add behavior to the $scope object.</p>
+            
+            <h4>Do not use controllers to:</h4>
+            <p class="paragraph">
+            <li>Manipulate DOM — Controllers should contain only business logic. Putting any presentation logic into Controllers significantly affects its testability. Angular has databinding for most cases and directives to encapsulate manual DOM manipulation.</li>
+            <li>Format input — Use angular form controls instead.</li>
+            <li>Filter output — Use angular filters instead.</li>
+            <li>Share code or state across controllers — Use angular services instead.</li>
+            <li>Manage the life-cycle of other components (for example, to create service instances).</li>
+            </p>
+            <p class="paragraph"><h4>Example of defining Controllers</h4></p>
+            <code>angular.module('uiRouterSample')
+            .controller('signInCtrl', ['$scope','$state','$location', function($scope, $state, $location){
+            var logCtrl = this;
+            $scope.logCtrl = {}
+            $scope.emailPattern = /^([a-zA-Z0-9])+([a-zA-Z0-9._%+-])+@([a-zA-Z0-9_.-])+\.(([a-zA-Z]){2,6})$/;
+            $scope.passwordType = 'password';
+            $scope.emailType = 'email';
+            $scope.fnameType='text';
+            $scope.lnameType='text';
+            $scope.hideShowPassword = function() {
+              if ($scope.passwordType == 'password')
+                $scope.passwordType = 'text';
+              else
+                $scope.passwordType = 'password';
+             }
+            $scope.log=function(click){
+              if($scope.logCtrl.email==='kristen@solestruck.com' && $scope.logCtrl.password==='billy123'){
+                console.log("true");
+               
+                $state.go('product');
+              }
+              else
+              {         
+               $scope.successMessage=true;
+              }
+            }
+            
+}]);
+</code>
+              <h4>How to invoke these controllers?</h4>
+              <p class="paragraph"> 
+              *We can define the controller within the DOM elements, like
+              <img src="images/first.png"></p>
+              <p class="paragraph">*If we are using UI-Router , we need to call within the corresponding states</p>
+              <code> .state('sole.log', {
+
+              url: '/LogIn',
+              templateUrl: 'Base/SS.Sign/SignIn/sole.login.html',
+              controller: 'signInCtrl',
+                 resolve: {
+                log: function ($ocLazyLoad) {
+                    return $ocLazyLoad.load(
+                        {
+                            name: "sole.log",
+                            files: ["Common/signInCtrl.js"]
+                        } 
+                    )
+                }
+            }
+        })</code>
+
+        </div>
+		<div ng-show="isSet(2)">
+          <p class="paragraph">Angular services are substitutable objects that are wired together using dependency injection (DI). You can use services to organize and share code across your app.</p>
+
+          <p class="paragraph">Angular services are:</p>
+
+          <p class="paragraph">Lazily instantiated – Angular only instantiates a service when an application component depends on it.</p>
+          <p class="paragraph">Singletons – Each component dependent on a service gets a reference to the single instance generated by the service factory.</p>
+          <p class="paragraph">Here is a service which takes JSON as a input</p>
+          <code>app.factory('ProductService', function($q, $timeout, $http) {
+
+      var ProductService = {
+
+            fetch: function(callback) {
+            return $timeout(function() {
+                return $http.get('SS.Data/Products.json').then(function(response) {
+                    return response.data;
+
+                });
+            }, 30);
+            }
+            };
+
+            return ProductService;
+
+});
+</code>
+     	</div>
+        <div ng-show="isSet(3)">
+        	<h1>Filter</h1>
+        </div>
+        <div ng-show="isSet(4)">
+        	<h1>Directory</h1>
+        </div>
+  	</div>
+  </div>
+</div>			
