@@ -1,0 +1,132 @@
+<div class="container">
+  <div class="sg-intro">
+    <h1>Solestruck Styleguide - Media Object Component</h1>
+    <p class="lead">
+      Here are the media object modules for our styleguide.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Default Media Object</h3>
+      <p>Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.</p>
+      <p>The default media displays a media object (images, video, audio) to the left or right of a content block.</p>
+      <div class="sg-example">
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Nested media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+          </div>
+          <div class="media-right">
+            <a href="#">
+              <img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64">
+            </a>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+          </div>
+          <div class="media-right">
+            <a href="#">
+              <img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64">
+            </a>
+          </div>
+        </div>
+      </div>
+<pre><code>&lt;div class="media"&gt;
+  &lt;div class="media-left"&gt;
+    &lt;a href="#"&gt;
+      &lt;img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64"&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="media-body"&gt;
+    &lt;h4 class="media-heading"&gt;Media heading</>&lt;h4&gt; Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+    Donec lacinia congue felis in faucibus.
+  &lt;/div&gt;
+&lt;div class="media"&gt;
+  &lt;div class="media-left"&gt;
+    &lt;a href="#"&gt;
+      &lt;img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64"&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="media-body"&gt;
+    &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt; Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+    Donec lacinia congue felis in faucibus.
+    &lt;div class="media"&gt;
+      &lt;div class="media-left"&gt;
+        &lt;a href="#"&gt;
+          &lt;img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64"&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="media-body"&gt;
+        &lt;h4 class="media-heading"&gt;Nested media heading&lt;/h4&gt; Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+        fringilla. Donec lacinia congue felis in faucibus. &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="media"&gt;
+  &lt;div class="media-body"&gt;
+    &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt; Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. &lt;/div&gt;
+  &lt;div class="media-right"&gt;
+    &lt;a href="#"&gt;
+      &lt;img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64"&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="media"&gt;
+  &lt;div class="media-left"&gt;
+    &lt;a href="#"&gt;
+      &lt;img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64"&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="media-body"&gt;
+    &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt; Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. &lt;/div&gt;
+  &lt;div class="media-right"&gt;
+    &lt;a href="#"&gt;
+      &lt;img class="media-object" alt="64x64" src="https://placeholdit.imgix.net/~text?txtsize=14&txt=64%C3%9764&w=64&h=64"&gt;
+    <&lt;/a>&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+</div>

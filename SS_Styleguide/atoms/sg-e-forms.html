@@ -1,0 +1,403 @@
+<div class="container">
+  <div class="sg-intro">
+    <h1>Solestruck Styleguide - Forms</h1>
+    <p class="lead">
+      Here are the form elements for our styleguide.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Inputs</h3>
+      <p>Most common form control, text-based input fields. Includes support for all HTML5 types:
+        <code>text</code>,
+        <code>password</code>,
+        <code>datetime</code>,
+        <code>datetime-local</code>,
+        <code>date</code>,
+        <code>month</code>,
+        <code>time</code>,
+        <code>week</code>,
+        <code>number</code>,
+        <code>email</code>,
+        <code>url</code>,
+        <code>search</code>,
+        <code>tel</code>, and
+        <code>color</code>.
+      </p>
+      <div class="sg-example">
+        <form>
+          <div class="form-group float-label-control">
+            <label for="">Username</label>
+            <input type="email" class="form-control" placeholder="Username">
+          </div>
+          <div class="form-group float-label-control">
+            <label for="">Password</label>
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+        </form>
+      </div>
+<pre><code>&lt;form&gt;
+  &lt;div class="form-group float-label-control"&gt;
+    &lt;label for=""&gt;Username&lt;/label&gt;
+    &lt;input type="email" class="form-control" placeholder="Username"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group float-label-control"&gt;
+    &lt;label for=""&gt;Password&lt;/label&gt;
+    &lt;input type="password" class="form-control" placeholder="Password"&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Text Areas</h3>
+      <p>Form control which supports multiple lines of text. Change
+        <code>rows</code>
+        attribute as necessary.</p>
+      <div class="sg-example">
+        <form>
+          <div class="form-group float-label-control">
+            <label for="">Textarea</label>
+            <textarea class="form-control" placeholder="Textarea" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+<pre><code>&lt;form&gt;
+  &lt;div class="form-group float-label-control"&gt;
+    &lt;label for=""&gt;Textarea&lt;/label&gt;
+    &lt;textarea class="form-control" placeholder="Textarea" rows="3"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Checkboxes &amp; Radios</h3>
+      <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
+      <p>Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent
+        <code>&lt;label&gt;</code>, you'll need to add the
+        <code>.disabled</code>
+        class to the parent
+        <code>.radio</code>,
+        <code>.radio-inline</code>,
+        <code>.checkbox</code>, or
+        <code>.checkbox-inline</code>.</p>
+      <div class="sg-example">
+        <form>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Option one is this and that—be sure to include why it's great
+            </label>
+          </div>
+          <div class="checkbox disabled">
+            <label>
+              <input type="checkbox" value="" disabled="disabled">
+              Option two is disabled
+            </label>
+          </div>
+          <br>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked">
+              Option one is this and that—be sure to include why it's great
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Option two can be something else and selecting it will deselect option one
+            </label>
+          </div>
+          <div class="radio disabled">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="disabled">
+              Option three is disabled
+            </label>
+          </div>
+        </form>
+      </div>
+<pre><code>&lt;form&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox" value=""&gt; Option one is this and that—be sure to include why it's great &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox disabled"&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox" value="" disabled="disabled"&gt; Option two is disabled &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;br&gt;
+  &lt;div class="radio"&gt;
+    &lt;label&gt;
+      &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked"&gt; Option one is this and that—be sure to include why it's great &lt;/label&gt;
+   &lt;/div&gt;
+  &lt;div class="radio"&gt;
+    &lt;label&gt;
+      &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt; Option two can be something else and selecting it will deselect option one &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="radio disabled"&gt;
+    &lt;label&gt;
+      &lt;input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="disabled"&gt; Option three is disabled &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Inline Checkboxes &amp; Radios</h3>
+      <p>Use the
+        <code>.checkbox-inline</code>
+        or
+        <code>.radio-inline</code>
+        classes on a series of checkboxes or radios for controls that appear on the same line.</p>
+      <div class="sg-example">
+        <form>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1">
+            1
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2">
+            2
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3">
+            3
+          </label>
+        </form>
+        <br/>
+        <form>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            3
+          </label>
+        </form>
+      </div>
+<pre><code>&lt;form&gt;
+  &lt;label class="checkbox-inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt; 1 &lt;/label&gt;
+  &lt;label class="checkbox-inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt; 2 &lt;/label&gt;
+  &lt;label class="checkbox-inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt; 3 &lt;/label&gt;
+&lt;/form&gt;
+&lt;br/&gt;
+&lt;form&gt;
+  &lt;label class="radio-inline"&gt;
+  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt; 1 &lt;/label&gt;
+  &lt;label class="radio-inline"&gt;
+  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"&gt; 2 &lt;/label&gt;
+  &lt;label class="radio-inline"&gt;
+  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"&gt; 3 &lt;/label&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Radio Button Group</h3>
+      <p>Use these radio button groups to offer customers a larger tap area.</p>
+      <div class="sg-example">
+
+        <div class="btn-group btn-group-justified" data-toggle="buttons">
+          <label class="btn btn-default active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>
+            $123.96 - Buy
+          </label>
+          <label class="btn btn-default">
+            <input type="radio" name="options" id="option2" autocomplete="off">
+            $0 - Try
+          </label>
+        </div>
+      </div>
+<pre><code>&lt;div class="btn-group btn-group-justified" data-toggle="buttons"&gt;
+  &lt;label class="btn btn-default active"&gt;
+    &lt;input type="radio" name="options" id="option1" autocomplete="off" checked&gt; $123.96 - Buy
+  &lt;/label&gt;
+  &lt;label class="btn btn-default"&gt;
+    &lt;input type="radio" name="options" id="option2" autocomplete="off"&gt; $0 - Try
+  &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Selects</h3>
+      <p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via
+        <code>border-radius</code>
+        properties.</p>
+      <div class="sg-example">
+        <form>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </form>
+      </div>
+<pre><code>&lt;form&gt;
+  &lt;select class="form-control"&gt;
+    &lt;option&gt;1&lt;/option&gt;
+    &lt;option&gt;2&lt;/option&gt;
+    &lt;option&gt;3&lt;/option&gt;
+    &lt;option&gt;4&lt;/option&gt;
+    &lt;option&gt;5&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Text Based Selects</h3>
+      <p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via
+        <code>border-radius</code>
+        properties.</p>
+      <div class="sg-example">
+        <form>
+          <select class="form-control text-select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </form>
+      </div>
+<pre><code>&lt;form&gt;
+  &lt;select class="form-control text-select"&gt;
+    &lt;option&gt;1&lt;/option&gt;
+    &lt;option&gt;2&lt;/option&gt;
+    &lt;option&gt;3&lt;/option&gt;
+    &lt;option&gt;4&lt;/option&gt;
+    &lt;option&gt;5&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Disabled Field</h3>
+      <p>Add the
+        <code>disabled</code>
+        boolean attribute on an input to prevent user interactions. Disabled inputs appear lighter and add a
+        <code>not-allowed</code>
+        cursor.</p>
+      <div class="sg-example">
+        <form>
+          <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="disabled">
+        </form>
+      </div>
+<pre><code>&lt;form&gt;
+  &lt;input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled="disabled"&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Validation States</h3>
+      <p>Bootstrap includes validation styles for error, warning, and success states on form controls. To use, add
+        <code>.has-warning</code>,
+        <code>.has-error</code>, or
+        <code>.has-success</code>
+        to the parent element. Any
+        <code>.control-label</code>,
+        <code>.form-control</code>, and
+        <code>.help-block</code>
+        within that element will receive the validation styles.</p>
+      <div class="sg-example">
+        <form>
+          <div class="form-group has-success">
+            <label class="control-label" for="inputSuccess1">Input with success</label>
+            <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+            <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+          </div>
+          <div class="form-group has-warning">
+            <label class="control-label" for="inputWarning1">Input with warning</label>
+            <input type="text" class="form-control" id="inputWarning1">
+          </div>
+          <div class="form-group has-error">
+            <label class="control-label" for="inputError1">Input with error</label>
+            <input type="text" class="form-control" id="inputError1">
+          </div>
+          <div class="has-success">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="checkboxSuccess" value="option1">
+                Checkbox with success
+              </label>
+            </div>
+          </div>
+          <div class="has-warning">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="checkboxWarning" value="option1">
+                Checkbox with warning
+              </label>
+            </div>
+          </div>
+          <div class="has-error">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="checkboxError" value="option1">
+                Checkbox with error
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+<pre><code>&lt;form&gt;
+  &lt;div class="form-group has-success"&gt;
+    &lt;label class="control-label" for="inputSuccess1"&gt;Input with success&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2"&gt;
+    &lt;span id="helpBlock2" class="help-block"&gt;A block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group has-warning"&gt;
+    &lt;label class="control-label" for="inputWarning1"&gt;Input with warning&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="inputWarning1"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group has-error"&gt;
+    &lt;label class="control-label" for="inputError1"&gt;Input with error&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="inputError1"&gt;
+  &lt;/div&gt;
+  &lt;div class="has-success"&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;label&gt;
+        &lt;input type="checkbox" id="checkboxSuccess" value="option1"&gt; Checkbox with success
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="has-warning"&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;label&gt;
+        &lt;input type="checkbox" id="checkboxWarning" value="option1"&gt; Checkbox with warning
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="has-error"&gt;
+    &lt;div class="checkbox"&gt;
+      &lt;label&gt;
+        &lt;input type="checkbox" id="checkboxError" value="option1"&gt; Checkbox with error &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </div>
+</div>

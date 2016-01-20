@@ -1,0 +1,136 @@
+<div class="container">
+  <div class="sg-intro">
+    <h1>Solestruck Styleguide - Navigation Component</h1>
+    <p class="lead">
+      Here are the nav modules for our styleguide.
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Nav Pills</h3>
+      <p>Take that same HTML, but use
+        <code>.nav-pills</code>
+        instead:</p>
+      <div class="sg-example">
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active">
+            <a href="#">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Profile</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Messages</a>
+          </li>
+        </ul>
+      </div>
+      <pre><code>&lt;ul class="nav nav-pills"&gt;
+  &lt;li role="presentation" class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li role="presentation"&gt;&lt;a href="#"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li role="presentation"&gt;&lt;a href="#"&gt;Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Breadcrumbs</h3>
+      <p>Indicate the current page's location within a navigational hierarchy.</p>
+      <p>Separators are automatically added in CSS through
+        <code>:before</code>
+        and
+        <code>content</code>.</p>
+      <div class="sg-example">
+        <ol class="breadcrumb">
+          <li class="active">Home</li>
+        </ol>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li class="active">Library</li>
+        </ol>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Library</a>
+          </li>
+          <li class="active">Data</li>
+        </ol>
+      </div>
+      <pre><code>&lt;ol class="breadcrumb"&gt;
+  &lt;li class="active"&gt;Home&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class="breadcrumb"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;Library&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class="breadcrumb"&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;Data&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Pagination</h3>
+      <p>Provide pagination links for your site or app with the multi-page pagination component, or the simpler
+        <a href="#pagination-pager">pager alternative</a>.</p>
+      <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+      <div class="sg-example">
+        <nav>
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">«</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">4</a>
+            </li>
+            <li>
+              <a href="#">5</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">»</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <pre><code>&lt;nav&gt;
+  &lt;ul class="pagination"&gt;
+    &lt;li&gt;
+      &lt;a href="#" aria-label="Previous"&gt;
+        &lt;span aria-hidden="true"&gt;«&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#" aria-label="Next"&gt;
+        &lt;span aria-hidden="true"&gt;»&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+    </div>
+  </div>
+</div>

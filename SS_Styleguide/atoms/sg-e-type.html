@@ -1,0 +1,413 @@
+<div class="container">
+  <div class="sg-intro">
+    <h1>Solestruck Styleguide - Type</h1>
+    <p class="lead">
+      Here are the type elements for our styleguide.
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Headings</h3>
+      <p>All HTML headings,
+        <code>&lt;h1&gt;</code>
+        through
+        <code>&lt;h6&gt;
+        </code>, are available.
+        <code>.h1</code>
+        through
+        <code>.h6</code>
+        classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
+      <div class="sg-example">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>
+                <h1>h1. Bootstrap heading</h1>
+              </td>
+              <td class="type-info">ExtraBold 45px</td>
+            </tr>
+            <tr>
+              <td>
+                <h2>h2. Bootstrap heading</h2>
+              </td>
+              <td class="type-info">ExtraBold 25px</td>
+            </tr>
+            <tr>
+              <td>
+                <h3>h3. Bootstrap heading</h3>
+              </td>
+              <td class="type-info">Bold 20px</td>
+            </tr>
+            <tr>
+              <td>
+                <h4>h4. Bootstrap heading</h4>
+              </td>
+              <td class="type-info">Bold 16px</td>
+            </tr>
+            <tr>
+              <td>
+                <h5>h5. Bootstrap heading</h5>
+              </td>
+              <td class="type-info">Bold 14px</td>
+            </tr>
+            <tr>
+              <td>
+                <h6>h6. Bootstrap heading</h6>
+              </td>
+              <td class="type-info">Bold 12px</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <pre><code>&lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;
+&lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt;
+&lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt;
+&lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt;
+&lt;h5&gt;h5. Bootstrap heading&lt;/h5&gt;
+&lt;h6&gt;h6. Bootstrap heading&lt;/h6&gt;</code></pre>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Body Copy</h3>
+      <p>Bootstrap's global default
+        <code>font-size</code>
+        is
+        <strong>14px</strong>, with a
+        <code>line-height</code>
+        of
+        <strong>1.428</strong>. This is applied to the
+        <code>&lt;body&gt;</code>
+        and all paragraphs. In addition,
+        <code>&lt;p&gt;</code>
+        (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
+      <div class="sg-example">
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+        <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+      </div>
+      <pre><code>&lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Strikethrough Text</h3>
+      <p>For indicating blocks of text that are no longer relevant use the
+        <code>&lt;s&gt;</code>
+        tag.</p>
+      <div class="sg-example">
+        <p>
+          <s>This line of text is meant to be treated as no longer accurate.</s>
+        </p>
+      </div>
+      <pre><code>&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Underlined Text</h3>
+      <p>To underline text use the
+        <code>&lt;u&gt;</code>
+        tag.</p>
+      <div class="sg-example">
+        <p>
+          <u>This line of text will render as underlined</u>
+        </p>
+      </div>
+      <pre><code>&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;p&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Small Text</h3>
+      <p>For de-emphasizing inline or blocks of text, use the
+        <code>&lt;small&gt;</code>
+        tag to set text at 85% the size of the parent. Heading elements receive their own
+        <code>font-size</code>
+        for nested
+        <code>&lt;small&gt;</code>
+        elements.</p>
+      <p>You may alternatively use an inline element with
+        <code>.small</code>
+        in place of any
+        <code>&lt;small&gt;</code>.</p>
+      <div class="sg-example">
+        <p>
+          <small>This line of text is meant to be treated as fine print.</small>
+        </p>
+      </div>
+      <pre><code>&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Bold</h3>
+      <p>For emphasizing a snippet of text with a heavier font-weight.</p>
+      <div class="sg-example">
+        <p>The following snippet of text is
+          <strong>rendered as bold text</strong>.</p>
+      </div>
+      <pre><code>&lt;p&gt;The following snippet of text is &lt;strong&gt;rendered as bold text&lt;/strong&gt;.&lt;/p&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Italics</h3>
+      <p>For emphasizing a snippet of text with italics.</p>
+      <div class="sg-example">
+        <p>The following snippet of text is
+          <em>rendered as italicized text</em>.</p>
+      </div>
+      <pre><code>&lt;p&gt;The following snippet of text is &lt;em&gt;rendered as italicized text&lt;/em&gt;.&lt;/p&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Alignment Classes</h3>
+      <p>Easily realign text to components with text alignment classes.</p>
+      <div class="sg-example">
+        <p class="text-left">Left aligned text.</p>
+        <p class="text-center">Center aligned text.</p>
+        <p class="text-right">Right aligned text.</p>
+        <p class="text-justify">Justified text.</p>
+        <p class="text-nowrap">No wrap text.</p>
+      </div>
+      <pre><code>&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
+&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
+&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;
+&lt;p class="text-justify"&gt;Justified text.&lt;/p&gt;
+&lt;p class="text-nowrap"&gt;No wrap text.&lt;/p&gt;
+</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Transformation Classes</h3>
+      <p>Transform text in components with text capitalization classes.</p>
+      <div class="sg-example">
+        <p class="text-lowercase">Lowercased text.</p>
+        <p class="text-uppercase">Uppercased text.</p>
+        <p class="text-capitalize">Capitalized text.</p>
+      </div>
+      <pre><code>&lt;p class="text-lowercase"&gt;Lowercased text.&lt;/p&gt;
+&lt;p class="text-uppercase"&gt;Uppercased text.&lt;/p&gt;
+&lt;p class="text-capitalize"&gt;Capitalized text.&lt;/p&gt;
+</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Addresses</h3>
+      <p>Present contact information for the nearest ancestor or the entire body of work. Preserve formatting by ending all lines with
+        <code>&lt;br&gt;</code>.</p>
+      <div class="sg-example">
+        <address>
+          <strong>Solestruck</strong>
+          <br>
+          417 SW 13th Ave.
+          <br>
+          Portland, OR 97205
+          <br>
+          <abbr title="Phone">P:</abbr>
+          (800) 494-1260
+        </address>
+        <address>
+          <strong>Customer Support</strong>
+          <br>
+          <a href="mailto:#">customersupport@solestruck.com</a>
+        </address>
+      </div>
+      <pre><code>&lt;address&gt;
+&lt;strong&gt;Solestruck&lt;/strong&gt;
+&lt;br&gt;417 SW 13th Ave.
+&lt;br&gt;Portland, OR 97205
+&lt;br&gt;
+&lt;abbr title="Phone"&gt;P:&lt;/abbr&gt; (800) 494-1260
+&lt;/address&gt;
+&lt;address&gt;
+&lt;strong&gt;Customer Support&lt;/strong&gt;
+&lt;br&gt;
+&lt;a href="mailto:#"&gt;customersupport@solestruck.com&lt;/a&gt;
+&lt;/address&gt;
+</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Unordered List</h3>
+      <p>A list of items in which the order does
+        <em>not</em>
+        explicitly matter.</p>
+      <div class="sg-example">
+        <ul>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Integer molestie lorem at massa</li>
+          <li>Facilisis in pretium nisl aliquet</li>
+          <li>Nulla volutpat aliquam velit
+            <ul>
+              <li>Phasellus iaculis neque</li>
+              <li>Purus sodales ultricies</li>
+              <li>Vestibulum laoreet porttitor sem</li>
+              <li>Ac tristique libero volutpat at</li>
+            </ul>
+          </li>
+          <li>Faucibus porta lacus fringilla vel</li>
+          <li>Aenean sit amet erat nunc</li>
+          <li>Eget porttitor lorem</li>
+        </ul>
+      </div>
+  <pre><code>&lt;ul&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+  &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+  &lt;li&gt;Nulla volutpat aliquam velit
+    &lt;ul&gt;
+      &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+      &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+      &lt;li&gt;Vestibulum laoreet porttitor sem&lt;/li&gt;
+      &lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+  &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Ordered List</h3>
+      <p>A list of items in which the order
+        <em>does</em>
+        explicitly matter.</p>
+      <div class="sg-example">
+        <ol>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Integer molestie lorem at massa</li>
+          <li>Facilisis in pretium nisl aliquet</li>
+          <li>Nulla volutpat aliquam velit</li>
+          <li>Faucibus porta lacus fringilla vel</li>
+          <li>Aenean sit amet erat nunc</li>
+          <li>Eget porttitor lorem</li>
+        </ol>
+      </div>
+  <pre><code>&lt;ol&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+  &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+  &lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+  &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Unstyled</h3>
+      <p>Remove the default
+        <code>list-style</code>
+        and left margin on list items (immediate children only).
+        <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+      <div class="sg-example">
+        <ul class="list-unstyled">
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Consectetur adipiscing elit</li>
+          <li>Integer molestie lorem at massa</li>
+          <li>Facilisis in pretium nisl aliquet</li>
+          <li>Nulla volutpat aliquam velit
+            <ul>
+              <li>Phasellus iaculis neque</li>
+              <li>Purus sodales ultricies</li>
+              <li>Vestibulum laoreet porttitor sem</li>
+              <li>Ac tristique libero volutpat at</li>
+            </ul>
+          </li>
+          <li>Faucibus porta lacus fringilla vel</li>
+          <li>Aenean sit amet erat nunc</li>
+          <li>Eget porttitor lorem</li>
+        </ul>
+      </div>
+  <pre><code>&lt;ul class="list-unstyled"&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+  &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+  &lt;li&gt;Nulla volutpat aliquam velit
+    &lt;ul&gt;
+      &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+      &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+      &lt;li&gt;Vestibulum laoreet porttitor sem&lt;/li&gt;
+      &lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+  &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Inline</h3>
+      <p>Place all list items on a single line with
+        <code>display: inline-block;</code>
+        and some light padding.</p>
+      <div class="sg-example">
+        <ul class="list-inline">
+          <li>Lorem ipsum</li>
+          <li>Phasellus iaculis</li>
+          <li>Nulla volutpat</li>
+        </ul>
+      </div>
+  <pre><code>&lt;ul class="list-inline"&gt;
+  &lt;li&gt;Lorem ipsum&lt;/li&gt;
+  &lt;li&gt;Phasellus iaculis&lt;/li&gt;
+  &lt;li&gt;Nulla volutpat&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Description List</h3>
+      <p>A list of terms with their associated descriptions.</p>
+      <div class="sg-example">
+        <dl>
+          <dt>Description lists</dt>
+          <dd>A description list is perfect for defining terms.</dd>
+          <dt>Euismod</dt>
+          <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+          <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+          <dt>Malesuada porta</dt>
+          <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+        </dl>
+      </div>
+  <pre><code>&lt;dl&gt;
+  &lt;dt&gt;Description lists&lt;/dt&gt;
+  &lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+  &lt;dt&gt;Euismod&lt;/dt&gt;
+  &lt;dd&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/dd&gt;
+  &lt;dd&gt;Donec id elit non mi porta gravida at eget metus.&lt;/dd&gt;
+  &lt;dt&gt;Malesuada porta&lt;/dt&gt;
+  &lt;dd&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+    </div>
+  </div>
+</div>

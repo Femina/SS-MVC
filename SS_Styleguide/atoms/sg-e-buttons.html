@@ -1,0 +1,141 @@
+<div class="container">
+  <div class="sg-intro">
+    <h1>Solestruck Styleguide - Buttons</h1>
+    <p class="lead">
+      Here are the button elements for our styleguide.
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Button Tags</h3>
+      <p>Use the button classes on an
+        <code>&lt;a&gt;</code>,
+        <code>&lt;button&gt;</code>, or
+        <code>&lt;input&gt;</code>
+        element.</p>
+      <div class="sg-example">
+        <form class="sg-example" data-example-id="btn-tags">
+          <a class="btn btn-default" href="#" role="button">Link</a>
+          <button class="btn btn-default" type="submit">Button</button>
+          <input class="btn btn-default" type="button" value="Input">
+          <input class="btn btn-default" type="submit" value="Submit">
+        </form>
+      </div>
+<pre><code>&lt;form class="sg-example" data-example-id="btn-tags"&gt;
+  &lt;a class="btn btn-default" href="#" role="button"&gt;Link&lt;/a&gt;
+  &lt;button class="btn btn-default" type="submit"&gt;Button&lt;/button&gt;
+  &lt;input class="btn btn-default" type="button" value="Input"&gt;
+  &lt;input class="btn btn-default" type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Button Options</h3>
+      <p>Use any of the available button classes to quickly create a styled button.</p>
+      <div class="sg-example">
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button>
+      </div>
+<pre><code>&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Block Level Buttons</h3>
+      <p>Create block level buttons—those that span the full width of a parent— by adding
+        <code>.btn-block</code>.</p>
+      <div class="sg-example" data-example-id="block-btns">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+      </div>
+<pre><code>&lt;button type="button" class="btn btn-primary btn-lg btn-block"&gt;Block level button&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default btn-lg btn-block"&gt;Block level button&lt;/button&gt; </code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Active States</h3>
+      <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For
+        <code>&lt;button&gt;</code>
+        elements, this is done via
+        <code>:active</code>. For
+        <code>&lt;a&gt;</code>
+        elements, it's done with
+        <code>.active</code>. However, you may use
+        <code>.active</code>
+        on
+        <code>&lt;button&gt;</code>s (and include the
+        <code>aria-pressed="true"</code>
+        attribute) should you need to replicate the active state programmatically.</p>
+      <p>No need to add
+        <code>:active</code>
+        as it's a pseudo-class, but if you need to force the same appearance, go ahead and add
+        <code>.active</code>.</p>
+      <p>Add the
+        <code>.active</code>
+        class to
+        <code>&lt;a&gt;</code>
+        buttons.</p>
+      <p class="sg-example" data-example-id="active-button-btns">
+        <button type="button" class="btn btn-primary btn-lg active">Primary button</button>
+        <button type="button" class="btn btn-default btn-lg active">Button</button>
+      </p>
+      <br/>
+      <p class="sg-example" data-example-id="active-anchor-btns">
+        <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+        <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+      </p>
+<pre><code>&lt;button type="button" class="btn btn-primary btn-lg active"&gt;Primary button&lt;/button&gt;
+&lt;button type="button" class="btn btn-default btn-lg active"&gt;Button&lt;/button&gt;
+&lt;a href="#" class="btn btn-primary btn-lg active" role="button"&gt;Primary link&lt;/a&gt;
+&lt;a href="#" class="btn btn-default btn-lg active" role="button"&gt;Link&lt;/a&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Disabled States</h3>
+      <p>Make buttons look unclickable by fading them back with
+        <code>opacity</code>.</p>
+      <p>Add the
+        <code>disabled</code>
+        attribute to
+        <code>&lt;button&gt;</code>
+        buttons.</p>
+      <p>Add the
+        <code>.disabled</code>
+        class to
+        <code>&lt;a&gt;</code>
+        buttons.</p>
+      <p class="sg-example" data-example-id="disabled-button-btns">
+        <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
+        <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+      </p>
+      <br/>
+      <p class="sg-example" data-example-id="disabled-anchor-btns">
+        <a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a>
+        <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
+      </p>
+<pre><code>&lt;button type="button" class="btn btn-primary btn-lg" disabled="disabled"&gt;Primary button&lt;/button&gt;
+&lt;button type="button" class="btn btn-default btn-lg" disabled="disabled"&gt;Button&lt;/button&gt;
+&lt;a href="#" class="btn btn-primary btn-lg disabled" role="button"&gt;Primary link&lt;/a&gt;
+&lt;a href="#" class="btn btn-default btn-lg disabled" role="button"&gt;Link&lt;/a&gt;</code></pre>
+    </div>
+  </div>
+</div>

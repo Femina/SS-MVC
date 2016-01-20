@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="sg-intro">
+    <h1>Solestruck Styleguide - Responsive Embed Component</h1>
+    <p class="lead">
+      Here are the responsive embed modules for our styleguide.
+    </p>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Video Embed</h3>
+      <p>Allow browsers to determine video or slideshow dimensions based on the width of their containing block by creating an intrinsic ratio that will properly scale on any device.</p>
+      <p>Rules are directly applied to
+        <code>&lt;iframe&gt;</code>,
+        <code>&lt;embed&gt;</code>,
+        <code>&lt;video&gt;</code>, and
+        <code>&lt;object&gt;</code>
+        elements; optionally use an explicit descendant class
+        <code>.embed-responsive-item</code>
+        when you want to match the styling for other attributes.</p>
+
+      <div class="sg-example">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    <pre><code>&lt;div class="embed-responsive embed-responsive-16by9"&gt;
+&lt;iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+</div>

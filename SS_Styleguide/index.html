@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html ng-app="SSStyleGuide">
+​
+  <head>
+    <link rel="icon" href="https://commondatastorage.googleapis.com/images2.solestruck.com/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <title>SS Styleguide</title>
+​   
+    <link  rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.6.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mRoute.js"></script>
+    <script src="js/orgRoute.js"></script>
+    <script src="js/pageRoute.js"></script>
+   
+​    <style>
+
+        #logo {
+    display: block;
+    background: url(https://storage.googleapis.com/images2.solestruck.com/gae/FBLive/images/Solestrucklogo-new1.png) no-repeat;
+    width: 320px;
+    height: 31px;
+    float: left;
+    margin: 5px 0 0;
+    }
+    </style>
+  </head>
+  <body>
+<div ng-controller="TopNavigation"> 
+  
+    <div class="navbar">
+      <div class="navbar-inner">
+         <div class="container">
+            <!-- Note: set the initial collapsed state and change it when clicking -->
+            <a ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" class="btn btn-navbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </a>
+            <a class="navbar-brand" ui-sref="sg-index" id="logo"></a>
+               <div collapse="navCollapsed" class="nav-collapse collapse navbar-responsive-collapse">
+                  <ul class="nav pull-right">
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                      <a ui-sref="#" class="dropdown-toggle" data-toggle="dropdown">Atoms <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a ui-sref="atom.sg-e-buttons">Buttons</a></li>
+                        <li><a ui-sref="atom.sg-e-forms">Forms</a></li>
+                        <li><a ui-sref="atom.sg-e-images">Images</a></li>
+                        <li><a ui-sref="atom.sg-e-tables">Tables</a></li>
+                        <li><a ui-sref="atom.sg-e-type">Types</a></li>
+                        <li class="divider"></li>
+                        <li><a ui-sref="#">Global</a></li>
+                      </ul>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                      <a ui-sref="#" class="dropdown-toggle" data-toggle="dropdown">Molecules <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a ui-sref="sg-c-alerts">Alerts</a></li>
+                        <li><a ui-sref="sg-c-labels">Labels</a></li>
+                        <li><a ui-sref="sg-c-media-object">Media</a></li>
+                        <li><a ui-sref="sg-c-nav">Nav</a></li>
+                        <li><a ui-sref="sg-c-responsive-embeds">Embeds</a></li>
+                        <li class="divider"></li>
+                        <li><a ui-sref="#">Global</a></li>
+                      </ul>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                      <a ui-sref="#" class="dropdown-toggle" data-toggle="dropdown">Organisms <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a ui-sref="sg-m-campaign-grid">Campaign</a></li>
+                        <li><a ui-sref="sg-m-header">Header</a></li>
+                        <li><a ui-sref="sg-m-footer">Footer</a></li>
+                        <li><a ui-sref="sg-m-form-email-check">Email</a></li>
+                        <li><a ui-sref="sg-m-image-slider">Image Slider</a></li>
+                        <li><a ui-sref="sg-m-product-grid">Product Grid</a></li>
+                        <li><a ui-sref="sg-m-form-signin">SignIn form</a></li>
+                        <li class="divider"></li>
+                        <li><a ui-sref="#">Global</a></li>
+                      </ul>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                      <a ui-sref="#" class="dropdown-toggle" data-toggle="dropdown">Templates <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <!-- <li><a ui-sref="atom.sg-e-tables">Home</a></li>
+                        <li><a ui-sref="atom.sg-e-buttons">Email</a></li>
+                        <li><a ui-sref="atom.sg-e-forms">Thank You</a></li>
+                        <li><a ui-sref="atom.sg-e-images">Cart</a></li>                        
+                        <li><a ui-sref="atom.sg-e-type">Sizechart</a></li>
+                        <li class="divider"></li>
+                        <li><a ui-sref="#">Global</a></li> -->
+                      </ul>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                      <a ui-sref="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a ui-sref="sg-v-homepage">Home</a></li>
+                        <li><a ui-sref="sg-v-signin-default">Signin</a></li>
+                        <li><a ui-sref="sg-v-account">Account</a></li>
+                        <li><a ui-sref="sg-v-product-listing">Product Listing</a></li>
+                        <li><a ui-sref="sg-v-idp">IDP</a></li>
+                        <li><a ui-sref="sg-v-wishList">Wishlist</a></li>
+                        <li><a ui-sref="sg-v-cart">Cart</a></li>
+                        <li><a ui-sref="sg-v-checkout">Checkout</a></li>
+                        <li><a ui-sref="sg-v-thankYou">Thankyou</a></li>                        
+                      </ul>
+                    </li>
+                  </ul>
+               </div><!-- /.nav-collapse -->
+          </div> <!-- /.container -->
+     </div><!-- /navbar-inner -->
+   </div><!-- /navbar -->
+ 
+</div>
+<div class="container">
+    <div ui-view></div>
+</div>
+</body>
+</html>
